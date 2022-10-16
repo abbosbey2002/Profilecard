@@ -1,0 +1,131 @@
+/* core style for documet */
+html{
+    font-size: 62.5%;
+}
+*, *:hover, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+      background: linear-gradient(45deg, transparent 10%, rgba(255,255,255,0.2));
+    background-color: rgba(0, 0, 2555, .1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+}
+/* components styless */
+
+/* profile container  */
+.profile_card{
+    width: 650px;
+    margin: auto;
+    margin-top: 10rem;
+    box-shadow: 0 18px 200px -60px black;
+    border-radius: 50px;
+    width: 650px;
+    position: relative;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(166, 166, 166, 0.584) ;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+}
+/* profile avatar  */
+
+.profile-card_img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: inherit;
+    box-shadow: 0 10px 60px -10px rgba(13, 28, 39, .5);
+}
+.profile-card_desc{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.profile-card_desc h1{
+    font-size: 2rem;
+}
+.profile-card_desc div{
+    font-size: 1.7rem;
+}
+/* about me */
+.profile_card_info, .profile_card_socials{
+    width: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.profile_card_action{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+}
+.profile-card-follow{
+    background: none;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+.fa-github{
+    color: #fff;
+}
+
+
+.profile_card_social{
+border-radius: 10px;
+animation: profileSocial 1s ease ;
+}
+@keyframes profileSocial {
+    0%{
+        transform: rotate(1deg);
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }
+}
+.instagram{
+    padding: 10px;
+    background: linear-gradient(-45deg, blue, red, yellow);
+    color: blue;
+    box-shadow: 0 4px 30px rgba(43, 98, 169, 0.5);
+}
+.telegram{
+    padding: 10px;
+    background: linear-gradient(-45deg, blue, rgb(50,100,200));
+    color: blue;
+    box-shadow: 0 4px 30px rgba(43, 98, 169, 0.5);
+}
+.facebook{
+    padding: 10px;
+    background: linear-gradient(-45deg, #3b5998, #0078d7);
+    color: blue;
+    box-shadow: 0 4px 30px rgba(43, 98, 169, 0.5);
+}
+.phone{
+    padding: 10px;
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.5), rgba(200, 90, 251, 0.5));
+    color: blue;
+    box-shadow: 0 4px 30px rgba(43, 98, 169, 0.5);
+}
+
+.blue{
+    color: blue;
+    
+}
+.orange{
+    color: orange;
+}
+.icon_me{
+    width: 12px;
+
+}
